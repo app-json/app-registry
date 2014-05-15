@@ -4,6 +4,7 @@
   "description": "The app.json registry, backed by a markdown file in a GitHub wiki.",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "mocha"
   },
   "repository": {
