@@ -16,4 +16,14 @@ registry.on("ready", function(){
   app.listen(app.get("port"), function(){
     console.log("Listening on port %d", app.get("port"))
   })
+
+  if (process.env.GIT_SYNC_INTERVAL) {
+    setInterval(function(){
+      registry.repo.sync(function(err){
+        if (err) return console.error(err)
+        console.log("git repo sync complete")
+      })
+    }, Number(process.env.GIT_SYNC_INTERVAL)*1000)
+  }
+
 })
