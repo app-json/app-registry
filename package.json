@@ -1,14 +1,14 @@
 {
-  "name": "app.json-registry-api",
+  "name": "app-registry",
   "version": "0.0.0",
-  "description": "Use a GitHub wiki as a backend for the app.json registry",
+  "description": "The app.json registry, backed by a markdown file in a GitHub wiki.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/app.json-registry-api"
+    "url": "https://github.com/heroku/app-registry"
   },
   "keywords": [
     "app.json",
@@ -19,12 +19,16 @@
   "author": "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/heroku/app.json-registry-api/issues"
+    "url": "https://github.com/heroku/app-registry/issues"
   },
-  "homepage": "https://github.com/heroku/app.json-registry-api",
+  "homepage": "https://github.com/heroku/app-registry",
   "dependencies": {
     "gift": "^0.4.1",
-    "dotenv": "^0.2.8"
+    "dotenv": "^0.2.8",
+    "express": "^4.1.2",
+    "async": "^0.8.0",
+    "uniq": "^1.0.0",
+    "cors": "^2.3.1"
   },
   "devDependencies": {
     "mocha": "^1.18.2"
