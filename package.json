@@ -1,7 +1,7 @@
 {
   "name": "app-registry",
   "version": "0.0.0",
-  "description": "The app.json registry, backed by a markdown file in a GitHub wiki.",
+  "description": "app.json registry webservice, backed by a markdown file in a GitHub wiki.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -29,7 +29,8 @@
     "express": "^4.1.2",
     "async": "^0.8.0",
     "uniq": "^1.0.0",
-    "cors": "^2.3.1"
+    "cors": "^2.3.1",
+    "simple-git": "^0.7.0"
   },
   "devDependencies": {
     "mocha": "^1.18.2"

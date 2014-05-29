@@ -41,14 +41,14 @@ describe("Registry", function() {
       "https://github.com/zeke/sample1",
       "https://github.com/zeke/sample3"
     ]
-    var app = "https://github.com/zeke/sample2"
-    registry.publish(app, function(err) {
-      console.error(err)
-      console.error(err.error)
+    var entry = "https://github.com/zeke/sample2"
+    registry.publish(entry, function(err) {
+      // console.error(err)
+      // console.error(err.error)
       assert(!err)
-      assert.equal(registry.entries.length, 4)
-      console.log("almost done")
-      // assert.equal(registry.entries.indexOf(app), 2)
+      // assert.equal(registry.entries.length, 4)
+      // console.log("almost done")
+      // assert.equal(registry.entries.indexOf(entry), 2)
       done()
     })
   })
